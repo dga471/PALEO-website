@@ -1,0 +1,16 @@
+# Top menu, in order. Each entry needs a label and a url.
+# Internal urls start with / and end with / (e.g. /about/).
+- label: Home
+  url: /
+- label: About
+  url: /about/
+- label: Collaboration
+  url: /collaboration/
+- label: Publications
+  url: /publications/
+- label: Talks
+  url: /talks/
+- label: Photos
+  url: /photos/
+- label: Links
+  url: /links/

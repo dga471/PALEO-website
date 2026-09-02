@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const links = await getCollection('links');
+---
+<BaseLayout title="Links">
+  <h1>Links</h1>
+  <ul class="link-list">
+    {links.map(({ data: l }) => (
+      <li>
+        <a href={l.url}>{l.label}</a>
+        <p>{l.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate } from '../../lib/format';
+import { albumFolder, albumImages } from '../../lib/photos';
+
+export async function getStaticPaths() {
+  const albums = await getCollection('photos');
+  return albums.map((album) => ({ params: { album: albumFolder(album.filePath) }, props: { album } }));
+}
+
+const { album } = Astro.props;
+const { Content } = await render(album);
+const images = albumImages(albumFolder(album.filePath));
+const captions = album.data.captions ?? {};
+---
+<BaseLayout title={album.data.title}>
+  <p class="small"><a href="/photos/">Photos</a></p>
+  <h1>{album.data.title}</h1>
+  <p class="muted">{formatDate(album.data.date)}</p>
+  {album.data.description && <p>{album.data.description}</p>}
+  <div class="prose"><Content /></div>
+
+  <ul class="photo-grid">
+    {images.map(({ file, image }) => (
+      <li>
+        <figure>
+          <a href={image.src}>
+            <Image src={image} alt={captions[file] ?? ''} width={800} height={600} />
+          </a>
+          {captions[file] && <figcaption>{captions[file]}</figcaption>}
+        </figure>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

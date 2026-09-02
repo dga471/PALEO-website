@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate, newestFirst } from '../../lib/format';
+
+const news = newestFirst(await getCollection('news'), (n) => n.data.date);
+const newsRendered = await Promise.all(news.map(async (item) => ({ item, Content: (await render(item)).Content })));
+---
+<BaseLayout title="News">
+  <h1>News</h1>
+  <ul class="news-list">
+    {newsRendered.map(({ item, Content }) => (
+      <li>
+        <time datetime={item.data.date.toISOString().slice(0, 10)}>{formatDate(item.data.date)}</time>
+        <h3>{item.data.title}</h3>
+        <div class="prose"><Content /></div>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

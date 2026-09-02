@@ -1,0 +1,59 @@
+# Member institutions, in the order they appear on the Collaboration page.
+# "short" is the key used in data/members.yaml to attach people to an institution.
+# "logo" (optional) is the file name of an image in src/assets/logos/.
+# The current logos are PLACEHOLDERS; replace the files with real logos.
+- name: Imperial College London
+  short: Imperial
+  country: United Kingdom
+  url: https://www.imperial.ac.uk/physics/
+  logo: placeholder-imperial.png
+- name: Jožef Stefan Institute
+  short: JSI
+  country: Slovenia
+  url: https://www.ijs.si/
+  logo: placeholder-jsi.png
+- name: Lawrence Livermore National Laboratory
+  short: LLNL
+  country: USA
+  url: https://www.llnl.gov/
+  logo: placeholder-llnl.png
+- name: SLAC National Accelerator Laboratory
+  short: SLAC
+  country: USA
+  url: https://www6.slac.stanford.edu/
+  logo: placeholder-slac.png
+- name: University of California, Berkeley
+  short: UC Berkeley
+  country: USA
+  url: https://www.berkeley.edu/
+  logo: placeholder-berkeley.png
+- name: University of Maryland
+  short: UMD
+  country: USA
+  url: https://umdphysics.umd.edu/
+  logo: placeholder-umd.png
+- name: University of Michigan
+  short: Michigan
+  country: USA
+  url: https://lsa.umich.edu/physics
+  logo: placeholder-michigan.png
+- name: University of North Florida
+  short: UNF
+  country: USA
+  url: https://www.unf.edu/coas/physics/
+  logo: placeholder-unf.png
+- name: University of Texas at Austin
+  short: UT Austin
+  country: USA
+  url: https://ph.utexas.edu/
+  logo: placeholder-utaustin.png
+- name: University of Zurich
+  short: UZH
+  country: Switzerland
+  url: https://www.physik.uzh.ch/
+  logo: placeholder-uzh.png
+- name: Virginia Tech
+  short: VT
+  country: USA
+  url: https://www.phys.vt.edu/
+  logo: placeholder-vt.png

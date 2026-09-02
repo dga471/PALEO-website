@@ -1,0 +1,17 @@
+---
+// Every Markdown file in content/pages/ becomes a page at /<slug>/.
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({ params: { slug: page.data.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+<BaseLayout title={page.data.title}>
+  <h1>{page.data.title}</h1>
+  <div class="prose"><Content /></div>
+</BaseLayout>

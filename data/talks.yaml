@@ -1,0 +1,16 @@
+# Talks and posters, any order (the page sorts newest first).
+# Fields: title, speaker, event, date (YYYY-MM-DD),
+#         url (optional, link to the event or the slides online),
+#         file (optional, name of a PDF placed in the public/talks/ folder).
+#
+# The entries below are SAMPLES to show the format; replace them.
+- title: "[Sample] Paleo-detectors: searching for dark matter in ancient minerals"
+  speaker: Patrick Huber
+  event: Sample Workshop on Dark Matter Detection
+  date: 2026-06-15
+  url: https://example.org/sample-workshop
+- title: "[Sample] Track readout in mineral samples with optical microscopy"
+  speaker: Chris Kelso
+  event: Sample Collaboration Meeting
+  date: 2026-03-20
+  file: sample-talk.pdf

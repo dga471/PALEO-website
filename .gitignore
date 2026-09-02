@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+bun.lock
+.claude/launch.json
+.DS_Store
+Thumbs.db

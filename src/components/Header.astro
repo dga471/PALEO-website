@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import Logo from './Logo.astro';
+
+const nav = await getCollection('nav');
+const current = Astro.url.pathname;
+
+function isCurrent(url: string): boolean {
+  if (url === '/') return current === '/';
+  return current.startsWith(url);
+}
+---
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__logo" aria-label="PALEO home"><Logo /></a>
+    <nav aria-label="Main">
+      <ul>
+        {nav.map(({ data }) => (
+          <li><a href={data.url} aria-current={isCurrent(data.url) ? 'page' : undefined}>{data.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

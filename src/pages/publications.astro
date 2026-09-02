@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { newestFirst } from '../lib/format';
+
+const all = newestFirst(await getCollection('publications'), (p) => p.data.year);
+const thesisTypes = ['phdthesis', 'mastersthesis', 'thesis', 'bachelorsthesis'];
+const theses = all.filter((p) => thesisTypes.includes(p.data.type));
+const papers = all.filter((p) => !thesisTypes.includes(p.data.type));
+
+const thesisLabel: Record<string, string> = {
+  phdthesis: 'PhD thesis',
+  mastersthesis: 'Master thesis',
+  bachelorsthesis: 'Bachelor thesis',
+  thesis: 'Thesis',
+};
+---
+<BaseLayout title="Publications">
+  <h1>Publications</h1>
+
+  <h2>Papers</h2>
+  <ul class="pub-list">
+    {papers.map(({ data: p }) => (
+      <li>
+        <div class="title">{p.title}</div>
+        <div>{p.authors}</div>
+        <div class="muted small">{[p.venue, p.volume, p.pages].filter(Boolean).join(', ')} ({p.year})</div>
+        <div class="links">
+          {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
+          {p.eprint && <a href={`https://arxiv.org/abs/${p.eprint}`}>arXiv:{p.eprint}</a>}
+          {p.url && <a href={p.url}>Link</a>}
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  {theses.length > 0 && (
+    <>
+      <h2>Theses</h2>
+      <ul class="pub-list">
+        {theses.map(({ data: p }) => (
+          <li>
+            <div class="title">{p.title}</div>
+            <div>{p.authors}</div>
+            <div class="muted small">{[thesisLabel[p.type], p.school].filter(Boolean).join(', ')} ({p.year})</div>
+            <div class="links">
+              {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
+              {p.eprint && <a href={`https://arxiv.org/abs/${p.eprint}`}>arXiv:{p.eprint}</a>}
+              {p.url && <a href={p.url}>Link</a>}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+</BaseLayout>

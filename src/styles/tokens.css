@@ -1,0 +1,112 @@
+/* ---------------------------------------------------------------------------
+   Design tokens. This is the ONLY place where colours, fonts and spacing are
+   set. Everything in site.css refers to these variables.
+
+   Theme: "Deep Strata". Dark charcoal header and footer, warm off-white page,
+   amber accent, Newsreader (serif) for headings, Source Sans 3 for text.
+   --------------------------------------------------------------------------- */
+:root {
+  /* Colours */
+  --color-bg: #fbf9f5;               /* page background */
+  --color-text: #1c1a18;             /* body text */
+  --color-muted: #6b655c;            /* secondary text: dates, captions */
+  --color-accent: #8a5f14;           /* links on the light background */
+  --color-accent-hover: #5e400c;
+  --color-accent-bright: #d29c3a;    /* accent on the dark header / hero */
+  --color-rule: #e4ded3;             /* hairlines */
+  --color-surface: #f2eee6;          /* light panels */
+  --color-header-bg: #1c1a18;
+  --color-header-text: #f2ede4;
+  --color-header-muted: #d8d0c3;     /* menu links */
+  --color-footer-bg: #1c1a18;
+  --color-footer-text: #b8b0a4;
+
+  /* Fonts */
+  --font-heading: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-heading-weight: 500;
+  --font-body: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-size-base: 1.125rem;        /* 18px */
+  --line-height: 1.6;
+
+  /* Layout */
+  --container: 70rem;                /* max page width */
+  --measure: 66ch;                   /* max width of running text */
+  --hero-height: clamp(13rem, 28vw, 22rem);   /* height of the home-page image band: at least 13rem, at most 22rem, 28% of the window width in between */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --radius: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Font files (self-hosted, SIL Open Font License; see src/assets/fonts/).
+   To change fonts: put new .woff2 files in src/assets/fonts/, update the
+   blocks below, and change --font-heading / --font-body above.
+   --------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/newsreader-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/newsreader-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/newsreader-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/newsreader-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/source-sans-3-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/source-sans-3-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/source-sans-3-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/source-sans-3-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}

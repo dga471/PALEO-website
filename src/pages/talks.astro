@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, newestFirst } from '../lib/format';
+
+const talks = newestFirst(await getCollection('talks'), (t) => t.data.date);
+---
+<BaseLayout title="Talks">
+  <h1>Talks</h1>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Title</th><th>Speaker</th><th>Event</th><th>Links</th></tr>
+      </thead>
+      <tbody>
+        {talks.map(({ data: t }) => (
+          <tr>
+            <td class="nowrap">{formatDate(t.date)}</td>
+            <td>{t.title}</td>
+            <td>{t.speaker}</td>
+            <td>{t.event}</td>
+            <td class="nowrap">
+              {t.file && <a href={`/talks/${t.file}`}>Slides</a>}
+              {t.file && t.url && ' · '}
+              {t.url && <a href={t.url}>Event</a>}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+# Links page. Fields: label, url, description.
+# The entries below are SAMPLES; replace them.
+- label: INSPIRE-HEP
+  url: https://inspirehep.net/
+  description: Literature database for high-energy physics.
+- label: arXiv
+  url: https://arxiv.org/
+  description: Preprint server. Replace with a curated search for paleo-detector papers.
+- label: PALEO on GitHub
+  url: https://github.com/
+  description: Sample link. Replace with the GitHub organisation of the collaboration.

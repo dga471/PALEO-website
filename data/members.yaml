@@ -1,0 +1,166 @@
+# Collaboration members.
+#
+# Fields: name, institution (must match a "short" value in data/institutions.yaml),
+#         role (free text; people with the same role are grouped together, and the
+#         groups appear in the order the roles first appear in this file),
+#         url (optional, personal or group web page), email (optional).
+#
+# Loaded from the membership spreadsheet on 2026-09-02. Open questions are marked TODO.
+
+# --- Spokespersons ---
+- name: Patrick Huber
+  institution: VT
+  role: Spokesperson
+  email: pahuber@vt.edu
+- name: Chris Kelso
+  institution: UNF
+  role: Spokesperson
+  email: ckelso@unf.edu
+
+# --- Imperial College London ---
+- name: Christian Wittweg
+  institution: Imperial
+  role: Senior member
+
+# --- Jožef Stefan Institute ---
+- name: Patrick Stengel
+  institution: JSI
+  role: Senior member
+
+# --- Lawrence Livermore National Laboratory ---
+- name: Xianyi Zhang
+  institution: LLNL
+  role: Senior member
+
+# --- SLAC ---
+- name: Arianna Gleason-Holbrook
+  institution: SLAC
+  role: Senior member
+- name: Kazuhiro Terao
+  institution: SLAC
+  role: Senior member
+
+# --- UC Berkeley ---
+- name: Igor Jovanovic
+  institution: UC Berkeley
+  role: Senior member
+
+# --- University of Maryland ---
+- name: Daniel Ang
+  institution: UMD
+  role: Senior member
+- name: Ronald Walsworth
+  institution: UMD
+  role: Senior member
+- name: Chinmay Bharathulwar
+  institution: UMD
+  role: Junior member
+- name: Mason Camp
+  institution: UMD
+  role: Junior member
+- name: Ben Cochran
+  institution: UMD
+  role: Junior member
+- name: Anson Cook
+  institution: UMD
+  role: Junior member
+- name: Gavishta Liyanage
+  institution: UMD
+  role: Junior member
+- name: Maximilian Shen
+  institution: UMD
+  role: Junior member
+- name: Jiashen Tang
+  institution: UMD
+  role: Junior member
+
+# --- University of Michigan ---
+- name: Valentin Fondement
+  institution: Michigan
+  role: Senior member 
+- name: Thomas Haddock
+  institution: Michigan
+  role: Senior member
+- name: Joshua Spitz
+  institution: Michigan
+  role: Senior member
+- name: Kai Sun
+  institution: Michigan
+  role: Senior member
+- name: Andrew Calabrese-Day
+  institution: Michigan
+  role: Junior member
+- name: Emilie LaVoie-Ingram
+  institution: Michigan
+  role: Junior member
+- name: Pranav Parvathaneni
+  institution: Michigan
+  role: Junior member
+- name: Hannah Ross
+  institution: Michigan
+  role: Junior member
+- name: Audrey Wu
+  institution: Michigan
+  role: Junior member
+- name: Zhexian Zhang
+  institution: Michigan
+  role: Junior member
+
+# --- University of North Florida ---
+- name: Gregory Wurtz
+  institution: UNF
+  role: Senior member
+- name: Zane Cable
+  institution: UNF
+  role: Junior member
+- name: Andre Peterson
+  institution: UNF
+  role: Junior member
+- name: Rabeya Rabu
+  institution: UNF
+  role: Junior member
+
+# --- University of Texas at Austin ---
+- name: Katherine Freese
+  institution: UT Austin
+  role: Senior member
+- name: Dionysios Theodosopoulos
+  institution: UT Austin
+  role: Junior member
+
+# --- University of Zurich ---
+- name: Laura Baudis
+  institution: UZH
+  role: Senior member
+- name: Nikita Vladimirov
+  institution: UZH
+  role: Senior member
+- name: Luisa Hötzsch
+  institution: UZH
+  role: Junior member
+- name: Florian Joerg
+  institution: UZH
+  role: Junior member
+
+# --- Virginia Tech ---
+- name: Vsevolod Ivanov
+  institution: VT
+  role: Senior member
+- name: Giti Khodaparast
+  institution: VT
+  role: Senior member
+- name: Brenden Magill
+  institution: VT
+  role: Senior member
+- name: Thomas O'Donnell
+  institution: VT
+  role: Senior member
+- name: Jordan Chapman
+  institution: VT
+  role: Junior member
+- name: Samuel Hedges
+  institution: VT
+  role: Junior member
+- name: Jackson Skidmore
+  institution: VT
+  role: Junior member

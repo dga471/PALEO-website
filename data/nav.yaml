@@ -10,7 +10,8 @@
   url: /publications/
 - label: Talks
   url: /talks/
-- label: Photos
-  url: /photos/
+# Photos is hidden for now: delete the "#" from the two lines below to show it again.
+#- label: Photos
+#  url: /photos/
 - label: Links
   url: /links/

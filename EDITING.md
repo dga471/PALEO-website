@@ -24,6 +24,7 @@ Put a value in double quotes if it contains a colon, e.g. `title: "Paleo-detecto
 | About and other pages    | `content/pages/` (one file per page)           |
 | Photo albums             | `content/photos/` (one folder per album)       |
 | Institution logos        | `src/assets/logos/` + `logo:` in `data/institutions.yaml` |
+| Collaboration photo      | `src/assets/collaboration-photo.jpg`           |
 | Home headline and image  | `content/home.md`, `src/assets/placeholders/`  |
 | Colours, fonts, spacing  | `src/styles/tokens.css`                        |
 | Menu-bar wordmark / logo | `src/components/Logo.astro`                    |
@@ -35,19 +36,24 @@ Add a block to `data/members.yaml`:
 ```yaml
 - name: Jane Doe
   institution: UMD
-  role: Junior member
+  senior: true                        # senior member, shown with *; leave out for junior members
+  board: true                         # institutional board member, shown with †; optional
+  spokesperson: true                  # optional; listed at the top of the page
   url: https://example.edu/~jdoe      # optional
   email: jdoe@example.edu             # optional
 ```
 
 - `institution` must exactly match a `short` value in `data/institutions.yaml`
   (the build fails with a message naming the person if it does not).
-- `role` is free text. People with the same role are listed together under that
-  heading, and the headings appear in the order the roles first occur in the file.
-  Use the existing spellings (`Spokesperson`, `Senior member`, `Junior member`)
-  unless you mean to create a new group.
+- Within an institution, senior members are listed before junior members;
+  otherwise people appear in the order of this file. To change the order, move
+  the blocks.
 
 To remove a member, delete their block.
+
+The photo at the top of the Collaboration page is
+`src/assets/collaboration-photo.jpg`; replace that file, keeping the name, to
+change the photo. A wide (landscape) photo works best.
 
 ## Add an institution
 
@@ -162,6 +168,10 @@ end with `/`.
 - label: Join
   url: /join/
 ```
+
+To hide a menu entry without losing it, put a `#` in front of both of its lines.
+That is how Photos is hidden at the moment. The page itself still exists at its
+address; only the menu link is gone.
 
 ## Add a photo album
 

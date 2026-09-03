@@ -30,7 +30,7 @@
 
   /* Layout */
   --container: 70rem;                /* max page width */
-  --measure: 66ch;                   /* max width of running text */
+  --measure: none;                   /* max width of running text; "none" = full page width, or e.g. 70ch to limit line length */
   --hero-height: clamp(13rem, 28vw, 22rem);   /* height of the home-page image band: at least 13rem, at most 22rem, 28% of the window width in between */
   --space-1: 0.25rem;
   --space-2: 0.5rem;

@@ -24,7 +24,7 @@ const thesisLabel: Record<string, string> = {
       <li>
         <div class="title">{p.title}</div>
         <div>{p.authors}</div>
-        <div class="muted small">{[p.venue, p.volume, p.pages].filter(Boolean).join(', ')} ({p.year})</div>
+        <div class="muted small">{p.venue ? [p.venue, p.volume, p.pages].filter(Boolean).join(', ') : 'Preprint'} ({p.year})</div>
         <div class="links">
           {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
           {p.eprint && <a href={`https://arxiv.org/abs/${p.eprint}`}>arXiv:{p.eprint}</a>}

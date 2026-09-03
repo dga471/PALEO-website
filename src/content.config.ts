@@ -19,9 +19,12 @@ function bibtexList(text: string) {
   }
   return library.entries.map((entry) => {
     const f = entry.fields;
+    // "and others" at the end of a BibTeX author list is shown as "et al."
     const authors = (f.author ?? [])
       .map((a) => a.name ?? [a.firstName, a.prefix, a.lastName, a.suffix].filter(Boolean).join(' '))
-      .join(', ');
+      .map((name) => (name.toLowerCase() === 'others' ? 'et al.' : name))
+      .join(', ')
+      .replace(', et al.', ' et al.');
     return {
       id: entry.key,
       type: entry.type.toLowerCase(),
@@ -52,7 +55,9 @@ const members = defineCollection({
   schema: z.object({
     name: z.string(),
     institution: z.string(),
-    role: z.string(),
+    senior: z.boolean().default(false),        // shown with *
+    board: z.boolean().default(false),         // institutional board, shown with †
+    spokesperson: z.boolean().default(false),  // listed at the top of the Collaboration page
     url: z.string().url().optional(),
     email: z.string().email().optional(),
   }),

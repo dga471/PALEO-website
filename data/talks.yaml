@@ -1,16 +1,393 @@
-# Talks and posters, any order (the page sorts newest first).
+# Talks and posters given by collaboration members, in any order (the page sorts newest first).
+#
 # Fields: title, speaker, event, date (YYYY-MM-DD),
-#         url (optional, link to the event or the slides online),
+#         url (optional, link to the event page or to the slides online),
 #         file (optional, name of a PDF placed in the public/talks/ folder).
 #
-# The entries below are SAMPLES to show the format; replace them.
-- title: "[Sample] Paleo-detectors: searching for dark matter in ancient minerals"
-  speaker: Patrick Huber
-  event: Sample Workshop on Dark Matter Detection
-  date: 2026-06-15
-  url: https://example.org/sample-workshop
-- title: "[Sample] Track readout in mineral samples with optical microscopy"
-  speaker: Chris Kelso
-  event: Sample Collaboration Meeting
-  date: 2026-03-20
-  file: sample-talk.pdf
+# Loaded from the collaboration's talks spreadsheet on 2026-09-03.
+# Dates marked "approximate date" were missing or uncertain in that spreadsheet.
+
+- title: "A Passive Detector for Observing Reactor CEvNS via Nuclear Recoil-Induced Crystal Defects (poster)"
+  speaker: "Sam Hedges"
+  event: "Neutrino 2026 - Irvine, CA"
+  date: 2026-06-22
+- title: "Mineral Detectors for Neutrinos"
+  speaker: "Patrick Stengel"
+  event: "Virginia Tech CNP seminar"
+  date: 2026-06-17
+- title: "Mineral Detectors for Neutrinos"
+  speaker: "Patrick Stengel"
+  event: "University of Maryland QTC group seminar"
+  date: 2026-06-10
+- title: "Paleo-Detectors: An alternative approach to direct detection"
+  speaker: "Dionysios Theodosopoulos"
+  event: "IDM2026, Zaragoza, Spain"
+  date: 2026-06-04
+- title: "Mineral Detectors for Neutrinos"
+  speaker: "Patrick Stengel"
+  event: "University of Delaware Particle Physics & Particle Astrophysics seminar"
+  date: 2026-06-04
+- title: "Detection of fast and thermal neutrons with a passive crystalline detector (poster)"
+  speaker: "Sam Hedges"
+  event: "UPR 2026 - UT Knoxville"
+  date: 2026-06-02
+- title: "Mineral Detectors for Neutrinos"
+  speaker: "Patrick Stengel"
+  event: "Johns Hopkins University HEP-ex seminar"
+  date: 2026-05-27
+- title: "TEM Study of Heavy Ion Tracks In Olivine"
+  speaker: "Hannah Ross"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-20
+- title: "From recoils to readout: recent progress and open questions in diamond-based mineral detection"
+  speaker: "Daniel Ang"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-20
+- title: "University of Michigan Research Update: Investigation of Readout Technology and Defect Formation for Astrophysical Particle Detection"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-19
+- title: "Surface Characterization of Mineral Samples Relevant for Particle Detection"
+  speaker: "Rabeya Rabu"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-19
+- title: "Can Paleo-Detectors Reconstruct Dark Matter Mass and Interactions?"
+  speaker: "Dionysios Theodosopoulos"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-19
+- title: "Updates on the VT mesoSPIM"
+  speaker: "Sam Hedges"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-18
+- title: "Data analysis and machine learning for mesoSPIM imaging of color centers from nuclear recoils in LiF"
+  speaker: "Patrick Stengel"
+  event: "MDDM Workshop 2026 - UM"
+  date: 2026-05-18
+- title: "Poster: Tracking Dark Matter in Minerals using Electron Diffraction"
+  speaker: "Andre Peterson"
+  event: "2026 UNF Materials Symposium"
+  date: 2026-05-08
+- title: "Investigating Track Formation and Morphology in Paleo-Detectors: Research Updates from the University of Michigan"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-17
+- title: "Progress Towards Paleo-Detectors at the University of Michigan"
+  speaker: "Hannah Ross"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-17
+- title: "Progress Towards Paleo-Detectors at the University of Michigan: Ion tracks creation and characterization"
+  speaker: "Kai Sun"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-17
+- title: "Probing WIMP-Nucleon Effective Interactions with Paleo-Detectors"
+  speaker: "Dionysios Theodosopoulos"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-16
+- title: "Mineral Detectors for Neutrinos"
+  speaker: "Patrick Stengel"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-15
+- title: "Surface Characterization of Mineral Samples Relevant for Particle Detection"
+  speaker: "Chris Kelso"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-15
+- title: "Directional Dark Matter Detection and Beyond: Diamond as a Platform for Mineral Detectors"
+  speaker: "Daniel Ang"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-14
+- title: "Imaging nuclear recoil damage in minerals with light-sheet microscopy"
+  speaker: "Sam Hedges"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-14
+- title: "Calorimetric vs track readout of paleo detectors"
+  speaker: "Patrick Huber"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-14
+- title: "Color center defect optical properties and formation dynamics in materials for dark matter detection"
+  speaker: "Vsevolod Ivanov"
+  event: "MDvDM 2026 - KIT (Germany)"
+  date: 2026-04-14
+- title: "Ancient Minerals as Paleo-Detectors: The search for high-throughput, nanometer-scale microscopy for the frontier of neutrino and dark matter detection"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "APS Global Physics Summit March 2026"
+  date: 2026-03-19
+- title: "Imaging nuclear recoils with light-sheet microscopy"
+  speaker: "Sam Hedges"
+  event: "APS Global Physics Summit March 2026"
+  date: 2026-03-19
+- title: "Molecular Dynamics Simulations of Paleodetectors"
+  speaker: "Audrey Wu"
+  event: "APS Global Physics Summit March 2026"
+  date: 2026-03-19
+- title: "Ancient Minerals as Dark Matter Detectors"
+  speaker: "Hannah Ross"
+  event: "APS Global Physics Summit March 2026"
+  date: 2026-03-18
+- title: "NSF GCR MDDM: University of Michigan Research Update"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDDM Mini Workshop 2026 - online"
+  date: 2026-01-28
+- title: "Imaging nuclear recoils with light-sheet microscopy at VT"
+  speaker: "Sam Hedges"
+  event: "VT CNP Day 2025"
+  date: 2025-12-12
+- title: "Searching for Dark Matter…in Rocks"
+  speaker: "Sam Hedges"
+  event: "VT Postdoc Seminar Series"
+  date: 2025-12-09
+- title: "Imaging nuclear recoils with light sheet fluorescence microscopy"
+  speaker: "Sam Hedges"
+  event: "Yale NPA Seminar"
+  date: 2025-12-04
+- title: "Strain and Defect Engineering of One-Dimensional TiS3 and NbS3 Materials Toward Single-Photon Emission"
+  speaker: "Jordan Chapman"
+  event: "MRS Fall 2025"
+  date: 2025-12-01
+- title: "Insights from Defect Databases for the Design of Color Centers for Quantum Technology"
+  speaker: "Vsevolod Ivanov"
+  event: "MRS Fall 2025"
+  date: 2025-12-01
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride"
+  speaker: "Patrick Stengel"
+  event: "IJS-FMF High Energy Physics seminar (Slovenia)"
+  date: 2025-11-27
+- title: "Progress in Directional Dark Matter Detection Using Nitrogen Vacancy Centers in Diamond"
+  speaker: "Daniel Ang"
+  event: "Center for Neutrino Physics Seminar, Virginia Tech, Blacksburg, VA"
+  date: 2025-11-05
+- title: "Poster: Tracking Dark Matter in Minerals using EBSD"
+  speaker: "Andre Peterson"
+  event: "2025 Physics and Astronomy Congress (SPSCon)"
+  date: 2025-11-01
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride"
+  speaker: "Patrick Stengel"
+  event: "Neutrino Physics and Machine Learning 2025 conference (Japan)"
+  date: 2025-10-30
+- title: "Tailor-made Color Centers for Quantum Technologies using Insights from Defect Databases"
+  speaker: "Vsevolod Ivanov"
+  event: "2025 SESAPS Meeting"
+  date: 2025-10-24
+- title: "Poster: First-principles Calculations of Random 1D Nitrogen Vacancy Spin Chains in Diamond"
+  speaker: "Makena Kaiman"
+  event: "2025 SESAPS Meeting"
+  date: 2025-10-23
+- title: "Poster: Database of Silicon Color Center Defects and Analysis via Graph Neural Networks"
+  speaker: "Pete Downey"
+  event: "2025 SESAPS Meeting"
+  date: 2025-10-23
+- title: "Imaging nuclear recoils with light-sheet microscopy"
+  speaker: "Sam Hedges"
+  event: "APS Division of Nuclear Physics 2025"
+  date: 2025-10-19
+- title: "Characterization of Radiation Induced Color Centers in Lithium Fluoride (poster)"
+  speaker: "Abhiram Sharma"
+  event: "APS Division of Nuclear Physics 2025"
+  date: 2025-10-19
+- title: "Imaging nuclear recoils with light sheet microscopy"
+  speaker: "Sam Hedges"
+  event: "Coordinating Panel on Advanced Detectors 2025"
+  date: 2025-10-08
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride"
+  speaker: "Patrick Stengel"
+  event: "AI 4 Science 2025 conference (Slovenia)"
+  date: 2025-09-23
+- title: "Searching for Cosmic Particles in Rocks! (poster)"
+  speaker: "Sam Hedges"
+  event: "Flip-the-Fair 2025, Roanoke VA"
+  date: 2025-09-09
+- title: "Progress in Directional Dark Matter Detection Using Nitrogen Vacancy Centers in Diamond"
+  speaker: "Daniel Ang"
+  event: "HEP - Astro Seminar, University of Michigan, Ann Arbor, MI"
+  date: 2025-09-08
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride."
+  speaker: "Patrick Huber"
+  event: "University of Maryland QTC group seminar"
+  date: 2025-08-27
+- title: "Paleo-Detecors: A new Endeavor for Dark Matter Detection"
+  speaker: "Dionysios Theodosopoulos"
+  event: "Corfu2025-Workshop on Standard Model and Beyond, Corfu, Greece, 2025"
+  date: 2025-08-26
+- title: "Using Ancient Rocks to Look for Neutrinos and Dark Matter"
+  speaker: "Josh Spitz"
+  event: "REU Seminar, University of Michigan"
+  date: 2025-08-05
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride."
+  speaker: "Patrick Huber"
+  event: "Magnificent CEvNS - Rio De Janeiro (Brazil)"
+  date: 2025-06-10
+- title: "Dark Matter"
+  speaker: "Katie Freese"
+  event: "From Puzzles to New Insights in Fundamental Physics, Campagna, Italy, June 2025"
+  date: 2025-06-01   # approximate date
+- title: "Mineral Detection of Neutrinos and Dark Matter"
+  speaker: "Patrick Stengel"
+  event: "University of Hawaii at Manoa HEP Seminar"
+  date: 2025-05-27
+- title: "Mineral Detectors on the Moon"
+  speaker: "Patrick Stengel"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-23
+- title: "Advanced Microscopy Study of Tracks in Natural and Synthesized Quartz"
+  speaker: "Kai Sun"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-23
+- title: "Update of mineral detection efforts at the University of North Florida"
+  speaker: "Chris Kelso"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-22
+- title: "Nuclear recoil detection with color centers in bulk lithium fluoride."
+  speaker: "Patrick Huber"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-22
+- title: "Atmospheric Neutrino and Dark Matter Detection with Paleo-Detectors at the University of Michigan"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-21
+- title: "Towards Quantum Sensing for Directional Dark Matter Detection Using Nitrogen Vacancy Centers in Diamond"
+  speaker: "Daniel Ang"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-20
+- title: "Surrogate sample preparation with neutron irradiation"
+  speaker: "Igor Jovanovic"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-20
+- title: "First-principles screening of mineral candidates for dark matter detection with the PALEOCCENE technique"
+  speaker: "Vsevolod Ivanov"
+  event: "MDvDM 2025 - JAMSTEC (Japan)"
+  date: 2025-05-20
+- title: "Mineral Detection of Neutrinos and Dark Matter"
+  speaker: "Patrick Stengel"
+  event: "Majorana-Raychaudhuri Seminar (Italy)"
+  date: 2025-05-16
+- title: "Poster: First Principles Calculations of Nitrogen Vacancy Center Properties"
+  speaker: "Abigail Vancoevering"
+  event: "VT Physics Departmental Poster Session"
+  date: 2025-05-15   # approximate date
+- title: "Using Ancient Rocks to Look for Neutrinos and Dark Matter"
+  speaker: "Josh Spitz"
+  event: "10th LCTP Spring Symposium: Hunting for Particle Dark Matter, University of Michigan"
+  date: 2025-05-06
+- title: "Digging Up Dark Matter with Paleo-Detectors"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "University of Michigan Saturday Morning Physics"
+  date: 2025-04-13
+- title: "Mineral Detection of Dark Matter and Neutrinos"
+  speaker: "Chris Kelso"
+  event: "2025 UNF Materials Symposium"
+  date: 2025-04-04
+- title: "Atmospheric Neutrino and Dark Matter Detection with Ancient Minerals"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "APS Global Physics Summit March 2025"
+  date: 2025-03-20
+- title: "First Principles Simulation of Color-Center Defects in Lithium Fluoride for Sensing Low-Energy Nuclear Recoils"
+  speaker: "Mariano Guerrero-Perez"
+  event: "APS Global Physics Summit March 2025"
+  date: 2025-03-19
+- title: "LDA+Gutzwiller approach for treating correlated electrons in color center defects"
+  speaker: "Benjamin Burdick"
+  event: "APS Global Physics Summit March 2025"
+  date: 2025-03-19
+- title: "Towards Quantum Sensing for Directional Dark Matter Detection Using Nitrogen-Vacancy Centers in Diamond"
+  speaker: "Daniel Ang"
+  event: "APS Global Physics Summit March 2025"
+  date: 2025-03-18
+- title: "Mineral Detection of Dark Matter and Neutrinos"
+  speaker: "Chris Kelso"
+  event: "The Search for New Physics: Leaving No Stone Unturned"
+  date: 2025-03-13
+- title: "Paleodetectors: Ancient Minerals from Deep Underground”, Los Angeles, CA, March 2025"
+  speaker: "Katie Freese"
+  event: "UCLA Dark Matter 2025: the 15th Symposium, March 2025"
+  date: 2025-03-01   # approximate date
+- title: "Mineral Detection of Neutrinos and Dark Matter"
+  speaker: "Patrick Stengel"
+  event: "SLAC FPD Seminar"
+  date: 2025-02-11
+- title: "Materials Selections for DM/Neutrinos Detections"
+  speaker: "Kai Sun"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-16
+- title: "First-principles Spin and Optical Properties of Vacancy Clusters in Lithium Fluoride"
+  speaker: "Vsevolod Ivanov"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-16
+- title: "Paleo-Detector Research at the University of Michigan"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-15
+- title: "Mineral Detectors on the Moon"
+  speaker: "Patrick Stengel"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-15
+- title: "Defect Formation: Dynamics"
+  speaker: "Vsevolod Ivanov"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-14
+- title: "Dark Matter: Direct (Mineral) Detection"
+  speaker: "Patrick Stengel"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-14
+- title: "Dark Matter: Direct (Mineral) Detection"
+  speaker: "Chris Kelso"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-14
+- title: "Defect Formation: Energy & Equilibrium"
+  speaker: "Vsevolod Ivanov"
+  event: "MDDM Workshop 2025 - Virginia Tech"
+  date: 2025-01-13
+- title: "Searching for proton decay with paleo-detectors"
+  speaker: "Patrick Stengel"
+  event: "DISCRETE 2024 conference (Slovenia)"
+  date: 2024-12-04
+- title: "Quantum Sensing with Diamond Defects: From Navigation to Dark Matter Detection"
+  speaker: "Daniel Ang"
+  event: "Naval Surface Warfare Center, Carderock, MD - invited talk"
+  date: 2024-10-31
+- title: "Unearthing Earth's Past With Paleo-Detectors: Novel Methods for Atmospheric Neutrino and WIMP Detection"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "SNOLab Invited Seminar"
+  date: 2024-10-28
+- title: "Crazy Ideas in Neutrino Physics (and Making Them Happen)"
+  speaker: "Josh Spitz"
+  event: "Physics Department Colloquium, University of Michigan"
+  date: 2024-10-16
+- title: "Towards a Prototype Paleo-Detector for Supernova Neutrino and Dark Matter Detection"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "17th Marcel Grossmann Meeting (Italy)"
+  date: 2024-07-12
+- title: "Concluding Theory Talk of the Conference"
+  speaker: "Katie Freese"
+  event: "International Dark Matter Meeting (IDM2024), L'Aquila, Italy, July 2024"
+  date: 2024-07-01   # approximate date
+- title: "Poster: First Principles Simulation of Color-Center Defects in Lithium Fluoride for Sensing Low-Energy Nuclear Recoils"
+  speaker: "Mariano Guerrero-Perez"
+  event: "2024 Annual Meeting of the Virginia Academy of Science"
+  date: 2024-05-16
+- title: "Poster: AB INITIO PROPERTIES OF COLOR CENTER DEFECTS FOR MINERAL DETECTION OF DARK MATTER"
+  speaker: "Pranshu Bhaumik"
+  event: "2024 Annual Meeting of the Virginia Academy of Science"
+  date: 2024-05-16
+- title: "Using Ancient Rocks to Look for Atmospheric Neutrinos"
+  speaker: "Josh Spitz"
+  event: "High Energy Physics Seminar, Michigan State University"
+  date: 2024-04-30
+- title: "Using Ancient Rocks to Look for Atmospheric Neutrinos"
+  speaker: "Josh Spitz"
+  event: "Particle Physics Seminar, Wayne State University"
+  date: 2024-04-19
+- title: "Using Ancient Rocks to Look for Atmospheric Neutrinos"
+  speaker: "Josh Spitz"
+  event: "Society of Physics Students Seminar, University of Michigan"
+  date: 2024-04-11
+- title: "Imaging Atmospheric Neutrinos with Paleo-detectors"
+  speaker: "Josh Spitz"
+  event: "MDvDM 2024 - Virginia Tech (DC)"
+  date: 2024-01-10
+- title: "Towards a Prototype Paleo-Detector for Supernova Neutrino and Dark Matter Detection"
+  speaker: "Emilie LaVoie-Ingram"
+  event: "MDvDM 2024 - Virginia Tech (DC)"
+  date: 2024-01-09
+- title: "Progress in directional DM detection with quantum diamond sensors"
+  speaker: "Daniel Ang"
+  event: "MDvDM 2024 - Virginia Tech (DC)"
+  date: 2024-01-09

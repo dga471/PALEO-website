@@ -1,0 +1,8 @@
+# Keep line endings consistent (LF in the repository) regardless of the editor's platform.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff2 binary
+*.pdf binary

@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { formatDate, newestFirst } from '../lib/format';
 import hero from '../assets/placeholders/hero-thin-section.jpg';
+import { url } from '../lib/url';
 
 const home = await getEntry('home', 'home');
 const { Content: Intro } = await render(home!);
@@ -39,6 +40,6 @@ const newsRendered = await Promise.all(news.map(async (item) => ({ item, Content
         </li>
       ))}
     </ul>
-    <p><a href="/news/">All news</a></p>
+    <p><a href={url("/news/")}>All news</a></p>
   </section>
 </BaseLayout>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { formatDate, newestFirst } from '../lib/format';
+import { url } from '../lib/url';
 
 const talks = newestFirst(await getCollection('talks'), (t) => t.data.date);
 ---
@@ -20,7 +21,7 @@ const talks = newestFirst(await getCollection('talks'), (t) => t.data.date);
             <td>{t.speaker}</td>
             <td>{t.event}</td>
             <td class="nowrap">
-              {t.file && <a href={`/talks/${t.file}`}>Slides</a>}
+              {t.file && <a href={url(`/talks/${t.file}`)}>Slides</a>}
               {t.file && t.url && ' · '}
               {t.url && <a href={t.url}>Event</a>}
             </td>

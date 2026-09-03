@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { formatDate, newestFirst } from '../../lib/format';
 import { albumFolder, albumImages } from '../../lib/photos';
+import { url } from '../../lib/url';
 
 const albums = newestFirst(await getCollection('photos'), (a) => a.data.date).map((album) => {
   const folder = albumFolder(album.filePath);
@@ -15,7 +16,7 @@ const albums = newestFirst(await getCollection('photos'), (a) => a.data.date).ma
   <ul class="album-grid">
     {albums.map(({ album, folder, cover }) => (
       <li>
-        <a href={`/photos/${folder}/`}>
+        <a href={url(`/photos/${folder}/`)}>
           {cover && <Image src={cover.image} alt="" width={640} height={480} />}
           <h3>{album.data.title}</h3>
         </a>

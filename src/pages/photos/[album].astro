@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { formatDate } from '../../lib/format';
 import { albumFolder, albumImages } from '../../lib/photos';
+import { url } from '../../lib/url';
 
 export async function getStaticPaths() {
   const albums = await getCollection('photos');
@@ -16,7 +17,7 @@ const images = albumImages(albumFolder(album.filePath));
 const captions = album.data.captions ?? {};
 ---
 <BaseLayout title={album.data.title}>
-  <p class="small"><a href="/photos/">Photos</a></p>
+  <p class="small"><a href={url("/photos/")}>Photos</a></p>
   <h1>{album.data.title}</h1>
   <p class="muted">{formatDate(album.data.date)}</p>
   {album.data.description && <p>{album.data.description}</p>}

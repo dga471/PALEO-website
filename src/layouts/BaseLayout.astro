@@ -3,6 +3,7 @@ import '../styles/tokens.css';
 import '../styles/site.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { url } from '../lib/url';
 
 interface Props {
   title?: string;
@@ -17,7 +18,10 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title ? `${title} | PALEO` : 'PALEO Collaboration'}</title>
     {description && <meta name="description" content={description} />}
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Keeps the site out of Google and other search engines while it is a
+         draft. DELETE THE NEXT LINE when the site is ready to be public. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href={url("/favicon.svg")} type="image/svg+xml" />
   </head>
   <body>
     <Header />

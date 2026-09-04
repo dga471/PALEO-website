@@ -7,7 +7,23 @@ in the GitHub web interface: open the file, click the pencil icon, edit, then
 want the change checked before it goes live (see "Previewing changes" at the end).
 
 Indentation matters in `.yaml` files: copy an existing block and change the values.
-Put a value in double quotes if it contains a colon, e.g. `title: "Paleo-detectors: a review"`.
+
+## Text containing a colon must be in quotes
+
+This catches everyone once. It applies to the `.yaml` files in `data/` **and** to
+the block between the `---` lines at the top of any file in `content/`.
+
+```yaml
+headline: PALEO: minerals as particle detectors     # BREAKS THE BUILD
+headline: "PALEO: minerals as particle detectors"   # correct
+```
+
+The build fails with `bad indentation of a mapping entry` and the file and line
+number, which is not an obvious way of saying "there is a stray colon here".
+Wrapping the whole value in double quotes fixes it. Quoting is always safe, so
+if in doubt, quote. The same goes for a value that starts with `#`, `@`, `%`,
+`&`, `*`, `[` or `{`. If the text itself contains a double quote, put a
+backslash before it: `title: "The \"paleo\" approach"`.
 
 ## Where things live
 

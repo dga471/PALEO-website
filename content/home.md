@@ -1,6 +1,6 @@
 ---
 title: Home
-headline: PALEO - minerals as particle detectors
+headline: "PALEO: minerals as particle detectors"
 # To show a small line above the headline, add:  tagline: Some text
 ---
 

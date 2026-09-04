@@ -1,6 +1,6 @@
-# PALEO collaboration website
+# PALEO collaboration website (under construction)
 
-Public website of PALEO, the Passive Asynchronous Lattice Exposure Observatory.
+Draft public website of PALEO, the Passive Asynchronous Lattice Exposure Observatory.
 
 Static site built with [Astro](https://astro.build) and deployed to GitHub Pages
 by the workflow in `.github/workflows/deploy.yml`.
